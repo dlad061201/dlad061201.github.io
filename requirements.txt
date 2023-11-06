@@ -7,3 +7,6 @@ fitz
 transformers
 asyncio
 frontend
+.events
+.clipboard
+..dom
