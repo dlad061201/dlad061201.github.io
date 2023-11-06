@@ -6,3 +6,4 @@ googletrans
 fitz
 transformers
 asyncio
+frontend
