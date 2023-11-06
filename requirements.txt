@@ -1,10 +1,7 @@
-streamlit
-PyPDF2
+streamlit==0.90.0
+PyPDF2==1.26.0
 pyttsx3
-gtts
-googletrans
-PyMuPDF
-fitz
-transformers
-asyncio
-frontend
+gtts==2.2.3
+googletrans==4.0.0-rc1
+PyMuPDF==1.18.17
+transformers==4.6.0
