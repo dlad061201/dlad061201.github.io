@@ -21,12 +21,15 @@ translator = Translator()
 # Function for extracting text from a PDF file
 def extract_text_from_pdf(pdf_file):
     text = ""
-    with pdf_file:
-        pdf_reader = PDFDocument(pdf_file)
-        pdf_text = extract_text_from_pdf(pdf_file.read())
-        page = pdf_reader.pages[page_num]
-        text += page.extract_text()
+    try:
+        pdf_reader = PdfReader(pdf_file)
+        for page_num in range(len(pdf_reader.pages)):
+            page = pdf_reader.pages[page_num]
+            text += page.extract_text()
+    except Exception as e:
+        st.error(f"Error occurred: {e}")
     return text
+
 
 # Function for generating a summary
 def generate_summary(text):
