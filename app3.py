@@ -16,15 +16,16 @@ from transformers import BartTokenizer, BartForConditionalGeneration
 import asyncio
 
 translator = Translator()
+loop = asyncio.get_event_loop()
 
 # Function for extracting text from a PDF file
 def extract_text_from_pdf(pdf_file):
     text = ""
     with pdf_file:
         pdf_reader = PDFDocument(pdf_file)
-        for page_num in range(len(pdf_reader.pages)):
-            page = pdf_reader.pages[page_num]
-            text += page.extract_text()
+        pdf_text = extract_text_from_pdf(pdf_file.read())
+        page = pdf_reader.pages[page_num]
+        text += page.extract_text()
     return text
 
 # Function for generating a summary
