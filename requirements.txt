@@ -4,6 +4,7 @@ pyttsx3
 gtts
 googletrans
 PyMuPDF
+fitz
 transformers
 asyncio
 frontend
