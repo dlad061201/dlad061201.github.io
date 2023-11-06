@@ -9,6 +9,7 @@ Created on Sun Aug 27 19:56:25 2023
 # Import required libraries
 import streamlit as st
 import pyttsx3
+from pdfreader import PDFDocument
 from gtts import gTTS
 from googletrans import Translator
 from transformers import BartTokenizer, BartForConditionalGeneration
@@ -20,7 +21,7 @@ translator = Translator()
 def extract_text_from_pdf(pdf_file):
     text = ""
     with pdf_file:
-        pdf_reader = PdfReader(pdf_file)
+        pdf_reader = PDFDocument(pdf_file)
         for page_num in range(len(pdf_reader.pages)):
             page = pdf_reader.pages[page_num]
             text += page.extract_text()
