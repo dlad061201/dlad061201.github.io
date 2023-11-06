@@ -8,11 +8,10 @@ Created on Sun Aug 27 19:56:25 2023
 
 # Import required libraries
 import streamlit as st
+from PyPDF2 import PdfReader
 import pyttsx3
 from gtts import gTTS
 from googletrans import Translator
-import PyMuPDF
-import fitz
 from transformers import BartTokenizer, BartForConditionalGeneration
 import asyncio
 
