@@ -12,7 +12,7 @@ from PyPDF2 import PdfReader
 import pyttsx3
 from gtts import gTTS
 from googletrans import Translator
-import pymupdf
+import PyMuPDF
 from transformers import BartTokenizer, BartForConditionalGeneration
 import asyncio
 
