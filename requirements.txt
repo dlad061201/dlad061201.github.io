@@ -1,0 +1,8 @@
+streamlit
+PyPDF2
+pyttsx3
+gtts
+googletrans
+fitz
+transformers
+asyncio
