@@ -3,7 +3,7 @@ PyPDF2
 pyttsx3
 gtts
 googletrans
-pymupdf
+PyMuPDF
 transformers
 asyncio
 frontend
