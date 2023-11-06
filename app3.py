@@ -13,6 +13,7 @@ import pyttsx3
 from gtts import gTTS
 from googletrans import Translator
 import PyMuPDF
+import fitz
 from transformers import BartTokenizer, BartForConditionalGeneration
 import asyncio
 
