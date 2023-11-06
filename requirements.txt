@@ -3,5 +3,7 @@ pdfreader==0.1.2
 pyttsx3==2.90
 gTTS==2.2.0
 googletrans==4.0.0-rc1
+PyTorch==2.0
+TensorFlow==2.0
 transformers==4.13.0
 asyncio==3.4.3
