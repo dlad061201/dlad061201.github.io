@@ -16,7 +16,7 @@ from transformers import BartTokenizer, BartForConditionalGeneration
 import asyncio
 
 translator = Translator()
-loop = asyncio.get_event_loop()
+#loop = asyncio.get_event_loop()
 
 # Function for extracting text from a PDF file
 def extract_text_from_pdf(pdf_file):
